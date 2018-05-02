@@ -1,0 +1,235 @@
+%\documentclass{beamer}
+%
+%\title{Python for Journalists}
+%\author{PyladiesBCN}
+%\date{Mars 19, 2015}
+%
+%\usetheme{pyladies}
+%
+%\begin{document}
+%\maketitle
+
+\documentclass{beamer}
+\usetheme{pyladies}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Use any fonts you like.
+\usepackage{helvet}
+
+% code highlighting
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\title{\textbf{Python for Journalists}}
+\author{\textbf{Cristina Ramón }\\ \textbf{ Núria Pujol }\\ \textbf{ Laura Pérez}}
+
+\date{\today}
+\institute{PyladiesBCN}
+
+\begin{document}
+
+\begin{frame}[plain,t]
+\titlepage
+\end{frame}
+
+\section{PyLadies}
+\begin{frame}
+\frametitle{Pyladies}
+%%Falta omplir una mica de info twitter, meetup etc.
+\vspace{1em}
+Pyladies is an \textbf{international mentorship group} with a focus on helping more women become active participants and leaders in the Python open-source community.\\
+\vspace{1em}
+It comprises different groups around the world, including PyladiesBCN! Do you want to learn more about us?\\
+\vspace{1em}
+	\begin{itemize}
+	    \item \textbf{On twitter:} @PyLadiesBCN
+		\item \textbf{On meetup:} http://meetup.com/PyLadies-BCN
+	\end{itemize}
+	
+\end{frame}
+
+\section{What’s Python?}
+\begin{frame}
+\frametitle{What’s Python?}
+
+\begin{center}
+{\Large Python is a programming language.}
+\end{center}
+
+	\begin{itemize}
+	    \item Simple and minimalistic language
+		\item Easy to learn compared with other languages.
+		\item Free and Open source
+	\end{itemize}
+\hfill \break
+Other more technical features: extensible, embeddable, object oriented, interpreted...
+\end{frame}
+
+\section{Some basic concepts}
+\begin{frame}
+\frametitle{Some basic concepts}
+
+{\normalsize We are going to introduce some basic concepts related to programming in Python. They will be necessary to follow our workshop.\\} 
+
+\vspace{2em}
+{\normalsize We assume that you never programmed before.\\}
+\vspace{1em}
+\textbf{{\Large If you have any questions, please ask!}}
+
+\end{frame}
+
+\subsection{Modules}
+\begin{frame}
+\frametitle{Modules}
+
+{\normalsize Python is a programming language, that means that we have to write our own functionalities \textbf{but no PANIC!!}\\ Someone have done some of this work for us.\\}
+\vspace{1em}
+{\normalsize Modules are  pieces of code ready to use, we just need to import them. There are thousands of Python modules (statistics, plotting data, web development, etc.).}
+
+\begin{center}
+	\lstinputlisting [linerange={2-2},language=Python]{lines_code.py}
+\end{center}
+
+{\normalsize After importing a module we can use all its functions, methods and other functionalities.}
+
+\end{frame}
+
+\subsection{Variables}
+
+\begin{frame}
+\frametitle{Variables}
+{\normalsize When we write a program we want to reuse some results. For this reason we assign this results (calculus, tables, strings,etc.) to names obtaining variables. \\}
+\vspace{1em}
+{\normalsize Then, in the following lines of code we can use these variables. \\}
+\vspace{1em}
+\lstinputlisting [linerange={4-5},language=Python]{lines_code.py}
+\vspace{1em}
+{\normalsize Notice that if variable names are representative they help us to make our code more readable.}
+\end{frame}
+
+\subsection{Lists}
+\begin{frame}
+\frametitle{Lists}
+
+{\normalsize A list is a collection of variables. Those variables can be words, numbers, other variables, etc. \\}
+\vspace{1em}
+\lstinputlisting [linerange={7-7},language=Python]{lines_code.py}
+
+\vspace{1em}
+{\normalsize To access every item in the list we call it by its position. \textbf{BUT!! we start counting on zero:} \\}
+\vspace{1em}
+\lstinputlisting [linerange={9-10},language=Python]{lines_code.py}
+\end{frame}
+
+\subsection{Methods}
+\begin{frame}
+\frametitle{Methods}
+
+{\normalsize In Python, every variable has available methods (“functions”). But every variable has different methods depending of variable type (integer, string, etc.). \\}
+\vspace{1em}
+\lstinputlisting [linerange={12-14},language=Python]{lines_code.py}
+
+{\normalsize For this reason it is said that “all in Python is an object”.\\}
+
+\end{frame}
+
+\subsection{Control Flow}
+\begin{frame}
+\frametitle{Control Flow Statements}
+
+{\normalsize To give some kind of intelligence to our code and obtain different outputs depending on some conditions we can use control flow statements.   
+\\}
+\vspace{1em}
+\begin{itemize}
+	\item \textbf{Conditional} (if, elif, else).
+	\item \textbf{Loops} (while , for).
+\end{itemize}
+\vspace{1em}
+{\normalsize Obviously we can mix this two types of control flow statements.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Control Flow Statements - Examples}
+\lstinputlisting [linerange={16-19},language=Python]{lines_code.py}
+\vspace{1em}
+\lstinputlisting [linerange={21-22},language=Python]{lines_code.py}
+\vspace{1em}
+{\normalsize You should respect the \textbf{indentation} in Python (those white spaces at the beginning of some lines)}
+\end{frame}
+
+\begin{frame}
+\frametitle{Control Flow Statements - Examples}
+{\normalsize You can also use conditions with ">", "<", "==", "and", "or"\\}
+\vspace{1em}
+\lstinputlisting [linerange={24-27},language=Python]{lines_code.py}
+\end{frame}
+
+\section{Usage}
+
+\begin{frame}
+
+\frametitle{How to use Python?}
+
+{\normalsize To use Python we need to write our code “somewhere”.\\}
+\vspace{1em}
+{\normalsize Python have 2 different ways of programming:\\}
+\vspace{1em}
+\begin{itemize}
+	\item Using interactive console.
+	\item Executing a script.
+\end{itemize}
+
+\end{frame}
+
+\section{IPython Notebook}
+\begin{frame}
+\frametitle{Interactive console. IPython Notebook}
+
+{\normalsize \textbf{IPython Notebook} is a quite new interactive console for programming in Python.\\}
+\vspace{1em}
+{\normalsize Is not really used by programmers but is widely used in scientific environment.\\}
+\vspace{2em}
+\textbf{{\normalsize In Interactive Python console we execute our code line by line and we obtain results step by step.\\}} 
+\end{frame}
+
+\section{Executing a script}
+\begin{frame}
+\frametitle{Executing a script}
+{\normalsize To execute a script we need a file with .py extension containing our code. Then we  execute this command  in the console:\\}
+\vspace{1em}
+\lstinputlisting [linerange={29-29},language=bash]{lines_code.py}
+\vspace{1em}
+{\normalsize We could also use an IDE (Interactive Development Environment) but for beginners is not really necessary.}
+\end{frame}
+
+\ThankYouFrame
+
+\end{document}

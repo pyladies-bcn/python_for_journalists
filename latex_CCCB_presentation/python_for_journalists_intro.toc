@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{PyLadies}{2}{0}{1}
+\beamer@sectionintoc {2}{What\IeC {\textquoteright }s Python?}{3}{0}{2}
+\beamer@sectionintoc {3}{Some basic concepts}{4}{0}{3}
+\beamer@subsectionintoc {3}{1}{Modules}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{Variables}{6}{0}{3}
+\beamer@subsectionintoc {3}{3}{Lists}{7}{0}{3}
+\beamer@subsectionintoc {3}{4}{Methods}{8}{0}{3}
+\beamer@subsectionintoc {3}{5}{Control Flow}{9}{0}{3}
+\beamer@sectionintoc {4}{Usage}{12}{0}{4}
+\beamer@sectionintoc {5}{IPython Notebook}{13}{0}{5}
+\beamer@sectionintoc {6}{Executing a script}{14}{0}{6}
